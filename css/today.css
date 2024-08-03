@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	/*background : rgb(91, 167, 188);*/
+	background-image: url("../images/back.jpg");
+	background-size: cover;
+	/*width:100%;*/
+	background-repeat: no-repeat;
+  	background-position: center;
+	margin : 0;
+	padding : 0;
+}
+
+header{
+	border: solid 1px #000000;
+	background:rgb(8, 22, 43, 0.8);
+	color: rgb(255, 255, 255);
+	font-size: 24px;
+}
+
+header, nav, section, article, footer{
+	text-align:center;
+}
+
+nav{
+	background:rgb(124, 214, 255, 0.8);
+}
+
+nav a{
+	color: #000000;
+	text-decoration: none;
+	background: rgb(222, 235, 255);
+	padding:15px;
+	display: inline-block;
+	border-radius: 30px;
+	margin: 5px;
+}
+nav a:hover{
+	color: rgb(0, 123, 255);
+
+}
+
+
+section{
+	width: 80%;
+	margin: auto;
+	background-color: rgb(255, 255, 255, 0);
+	color:rgb(246, 255, 0);
+	text-align: center;
+}
+
+
+article{	
+	display: inline-block;
+	color:white;
+	border: solid 1px #ddd;
+	margin:20px;
+}
+/*
+article a{
+	color:#000;
+}
+
+article a:hover{
+	background: rgb(55, 255, 0);
+	color: #fff;
+}
+
+article a:active{
+	background: #FC0;
+	color: #000;
+}*/
+
+.article_a article{
+	background: rgba(221, 246, 122, 0.5);
+	color: #000;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+.article_a:hover article{
+	background: rgb(132, 255, 0, 0.8);
+	color: #19003f;
+}
+
+.article_a:active article{
+	background: #FC0;
+	color: #000;
+}
+
+aside {
+	font-size: 10px;
+}
+
+footer{
+	color:white;
+}
+
