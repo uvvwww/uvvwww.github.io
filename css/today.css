@@ -65,6 +65,12 @@ nav a:hover{
 	background: var(--maintheme);
 }
 
+/* Course-term navigation */
+nav a{
+	font-size:clamp(1.15rem, 3vw, 2.4rem);
+	padding:12px 20px;
+}
+
 
 /*header*/
 header{
