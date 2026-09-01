@@ -16,6 +16,14 @@ h2 { margin: 0 0 8px; }
 .content-card, .resource-list a { display: block; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 24px; text-decoration: none; transition: transform .15s ease, border-color .15s ease; }
 .content-card:hover, .resource-list a:hover { transform: translateY(-3px); border-color: var(--accent); }
 .content-card p { margin: 0; }
+.about-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.about-grid article { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 24px; }
+.about-grid article:last-child { grid-column: 1 / -1; }
+.about-grid p { margin-bottom: 0; }
+.catalogue { display: grid; gap: 18px; margin: 18px 0 48px; }
+.catalogue article { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 24px; }
+.catalogue p, .quiet { color: #536258; line-height: 1.75; }
+.inline-link { color: var(--accent); font-weight: 700; }
 .term-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .term-card { color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 24px; text-decoration: none; transition: transform .15s ease, border-color .15s ease; }
 .term-card:hover { transform: translateY(-3px); border-color: var(--accent); }
@@ -25,4 +33,4 @@ h2 { margin: 0 0 8px; }
 .resource-list a { display: flex; justify-content: space-between; align-items: center; }
 .resource-list span { color: var(--accent); font-size: .8rem; font-weight: 700; }
 footer { max-width: 1040px; margin: 0 auto; padding: 24px; border-top: 1px solid var(--line); color: #536258; }
-@media (max-width: 700px) { .site-header { align-items: flex-start; flex-direction: column; } .link-grid, .term-grid { grid-template-columns: 1fr; } }
+@media (max-width: 700px) { .site-header { align-items: flex-start; flex-direction: column; } .link-grid, .term-grid, .about-grid { grid-template-columns: 1fr; } .about-grid article:last-child { grid-column: auto; } }
